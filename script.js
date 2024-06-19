@@ -8,8 +8,8 @@ let D = document.querySelector(".equal");
 let F = document.querySelector(".reprov");
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    let A = document.getElementById("A").value
-    let B = document.getElementById("B").value
+    let A = parseFloat(document.getElementById('A').value)
+    let B = parseFloat(document.getElementById('B').value)
     if(B > A){
         C.style.display = 'block'
     } 
